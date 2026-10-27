@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronDown, ChevronUp, ZoomIn, X } from 'lucide-react';
+import { ChevronDown, ChevronUp, ZoomIn, X } from 'lucide-react';
 import { WORK_CATEGORIES } from '../data/worksData';
 
 const PROMOTIONAL_WORKS = [
@@ -98,10 +98,9 @@ export default function Hero() {
                   <Link
                     key={cat.slug}
                     to={`/works/${cat.slug}`}
-                    className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-slate-50 hover:bg-yellow-400 text-slate-900 border border-slate-200 hover:border-slate-900 rounded-lg font-bold text-xs transition-all no-underline group shadow-2xs hover:-translate-y-0.5"
+                    className="inline-flex items-center px-2.5 py-1.5 bg-slate-50 hover:bg-yellow-400 text-slate-900 border border-slate-200 hover:border-slate-900 rounded-lg font-bold text-xs transition-all no-underline shadow-2xs hover:-translate-y-0.5"
                   >
                     <span>{cat.title}</span>
-                    <ArrowRight size={12} className="text-slate-400 group-hover:text-slate-950 transition-colors shrink-0" />
                   </Link>
                 ))}
 
