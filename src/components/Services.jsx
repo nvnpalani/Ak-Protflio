@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { 
   Zap, Sun, Sparkles, Tv, Layers, Printer, ShieldAlert,
   FileText, Flag, Bus, Car, Footprints, Truck, 
-  FileImage, Umbrella, Construction, MessageCircle, ArrowUpRight
+  FileImage, Umbrella, Construction, ArrowUpRight,
+  ChevronDown, ChevronUp
 } from 'lucide-react';
 import { SITE_CONFIG } from '../data/config';
 
@@ -28,36 +30,27 @@ export const ALL_SERVICES = [
 ];
 
 export default function Services() {
+  const [showAll, setShowAll] = useState(false);
+  const displayedServices = showAll ? ALL_SERVICES : ALL_SERVICES.slice(0, 10);
+
   return (
     <section id="services" className="py-8 sm:py-12 bg-white border-b border-slate-200" aria-label="Our Full Services">
       <div className="container">
         
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
-          <div>
-            <div className="section-badge-compact mb-2">Our Services &amp; Solutions</div>
-            <h2 className="section-title-compact text-2xl sm:text-3xl">
-              Complete Signage &amp; Outdoor Advertising
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-500 max-w-xl">
-              From 3D illuminated boards to transit bus &amp; auto branding, we design, fabricate, and install across Tamil Nadu.
-            </p>
-          </div>
-
-          <a
-            href={`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent('Hi AK Creation, I need a quotation for signage and advertising work.')}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 self-start sm:self-auto px-3.5 py-2 bg-yellow-400 hover:bg-yellow-300 text-slate-950 rounded-lg text-xs font-bold border border-slate-900 transition-colors shadow-2xs no-underline shrink-0"
-          >
-            <MessageCircle size={14} />
-            <span>Enquire on WhatsApp</span>
-          </a>
+        <div className="mb-6">
+          <div className="section-badge-compact mb-2">Our Services &amp; Solutions</div>
+          <h2 className="section-title-compact text-2xl sm:text-3xl">
+            Complete Signage &amp; Outdoor Advertising
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-500 max-w-xl">
+            From 3D illuminated boards to transit bus &amp; auto branding, we design, fabricate, and install across Tamil Nadu.
+          </p>
         </div>
 
-        {/* 19 Services Modern Grid */}
+        {/* 10 Services initially (or all 19 when expanded) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3">
-          {ALL_SERVICES.map((service) => {
+          {displayedServices.map((service) => {
             const Icon = service.icon;
             const waText = encodeURIComponent(`Hi AK Creation, I am interested in ${service.name}. Can you share details and pricing?`);
             return (
@@ -87,6 +80,18 @@ export default function Services() {
               </a>
             );
           })}
+        </div>
+
+        {/* Read More / Show Less Toggle Button */}
+        <div className="mt-5 text-center">
+          <button
+            type="button"
+            onClick={() => setShowAll(!showAll)}
+            className="inline-flex items-center gap-2 px-5 py-2 bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-extrabold text-xs sm:text-sm rounded-lg border border-slate-900 transition-colors shadow-2xs cursor-pointer"
+          >
+            <span>{showAll ? 'Show Less' : `Read More (+${ALL_SERVICES.length - 10} More Services)`}</span>
+            {showAll ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
+          </button>
         </div>
 
       </div>
