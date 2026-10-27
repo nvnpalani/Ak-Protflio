@@ -78,6 +78,12 @@ export const ACRYLIC_BOARDS = [
   { id: 'ab-5', category: 'Acrylic Board', title: 'Gold Mirror Acrylic Billing Counter Name Plate', src: '/signs/acrylic-5.jpg' },
 ];
 
+// Foam Sheet with Vinyl (Wall Pasting & Promotional Display Boards)
+export const FOAM_SHEET_WORKS = [
+  { id: 'fs-1', category: 'Foam Sheet with Vinyl', title: 'NR IAS Academy & Rotary Club Trichy Foam Sheet Wall Branding', src: '/signs/foam-sheet-1.jpg' },
+  { id: 'fs-2', category: 'Foam Sheet with Vinyl', title: 'Alagu Dental Care Foam Sheet with Vinyl Board Display', src: '/signs/foam-sheet-2.jpg' },
+];
+
 export const WORK_CATEGORIES = [
   {
     slug: 'flex-ads',
@@ -98,6 +104,11 @@ export const WORK_CATEGORIES = [
     slug: 'acrylic-board',
     title: 'Acrylic Board',
     items: ACRYLIC_BOARDS,
+  },
+  {
+    slug: 'foam-sheet-vinyl',
+    title: 'Foam Sheet with Vinyl',
+    items: FOAM_SHEET_WORKS,
   },
   {
     slug: 'roll-up',
