@@ -15,7 +15,7 @@ export default function Hero() {
 
           {/* Left Column: Equal Column Space */}
           <div className="flex flex-col justify-center lg:pr-6">
-            <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.14] text-slate-900 tracking-tight mb-3">
+            <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.14] text-slate-900 tracking-tight">
               AK CREATION{' '}
               <br />
               <span className="text-yellow-500 text-xl sm:text-2xl font-bold">

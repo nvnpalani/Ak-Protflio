@@ -22,28 +22,32 @@ const CUSTOMER_LOGOS = [
     logo: '/b-fit.png',
   },
   {
-    name: 'VIP Housing and Properties',
-    logo: '/vip-housing.png',
+    name: 'VIP City',
+    logo: '/vip-city.png',
   },
   {
     name: 'NR IAS Academy',
     logo: '/nr-ias-academy.png',
   },
   {
-    name: 'Propshell - Property Personalised',
+    name: 'Propshell',
     logo: '/propshell-logo.png',
   },
   {
-    name: 'Raju Properties',
+    name: 'Raaju Property',
     logo: '/raju-properties.jpg',
-  },
-  {
-    name: 'Sri Prasanna Properties',
-    logo: '/sri-prasanna-properties.png',
   },
   {
     name: 'Velchoice Properties Pvt. Ltd.',
     logo: '/velchoice-properties.png',
+  },
+  {
+    name: 'Rotary Club of Tiruchirappalli Success',
+    logo: '/rotary-success.png',
+  },
+  {
+    name: 'Sri Prasanna Properties',
+    logo: '/sri-prasanna-properties.png',
   },
   {
     name: 'Shine Academy',
