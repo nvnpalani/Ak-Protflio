@@ -1,4 +1,5 @@
 import { Sparkles, Phone, Mail, MapPin, ArrowUp } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { SITE_CONFIG } from '../data/config';
 
 function InstagramIcon({ size = 15 }) {
@@ -32,10 +33,20 @@ function WhatsAppIcon({ size = 15 }) {
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const navigate = useNavigate();
+  const location = useLocation();
   const waLink = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(SITE_CONFIG.whatsappMessage)}`;
 
-  const scrollTo = (id) =>
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  const scrollTo = (id) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      }, 120);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <footer className="bg-slate-900 text-slate-300 py-6 border-t-2 border-yellow-400" role="contentinfo">

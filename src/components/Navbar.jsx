@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { SITE_CONFIG } from '../data/config';
 
@@ -13,8 +14,14 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [active,   setActive]   = useState('home');
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
+    if (location.pathname !== '/') {
+      setActive('');
+      return;
+    }
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
       const ids = ['home', 'services', 'customers', 'about'];
@@ -28,11 +35,18 @@ export default function Navbar() {
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [location.pathname]);
 
   const go = (id) => {
     setMenuOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      }, 120);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
