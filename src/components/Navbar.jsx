@@ -74,8 +74,8 @@ export default function Navbar() {
                 <span className="font-display font-extrabold text-sm sm:text-base text-slate-900 tracking-tight leading-none truncate">
                   {SITE_CONFIG.studioName}
                 </span>
-                <span className="text-[9px] sm:text-[10px] font-bold text-slate-500 uppercase tracking-wide">
-                  Printing Branding &amp; LED Signage
+                <span className="text-[9px] sm:text-[10px] font-bold text-slate-500 uppercase tracking-wide truncate">
+                  Printing-Branding-Advertising-LED Signages
                 </span>
               </div>
             </button>
