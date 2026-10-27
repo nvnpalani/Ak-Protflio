@@ -42,33 +42,39 @@ export const ROLLUP_BANNERS = [
   { id: 'ru-5', category: 'Roll Up', title: 'The Boys Burger Franchise Opportunity Graphic Standee', src: '/signs/rollup-5.jpg' },
 ];
 
+// Sunpack Sheets (Pole Boards & Flute Sheet Advertising)
+export const SUNPACK_BOARDS = [
+  { id: 'sp-1', category: 'Sunpack', title: 'Badminton Academy Coaching Camp Pole Sunpack', src: '/signs/sunpack-1.jpg' },
+  { id: 'sp-2', category: 'Sunpack', title: 'Prasanna Properties Perumal Avenue Pole Sunpack', src: '/signs/sunpack-2.jpg' },
+  { id: 'sp-3', category: 'Sunpack', title: 'Prasanna Properties Venkateshwara Nagar Pole Sunpack', src: '/signs/sunpack-3.jpg' },
+  { id: 'sp-4', category: 'Sunpack', title: 'Velchoice Properties Special Plot Offer Pole Sunpack', src: '/signs/sunpack-4.jpg' },
+  { id: 'sp-5', category: 'Sunpack', title: 'Velchoice Properties Panjappur Pole Sunpack Board', src: '/signs/sunpack-5.jpg' },
+];
+
 export const WORK_CATEGORIES = [
   {
     slug: 'flex-ads',
     title: 'Flex Ads',
-    count: FLEX_ADVERTISING.length,
-    desc: 'Roadside hoardings, outdoor flex banners & promotional event displays.',
     items: FLEX_ADVERTISING,
   },
   {
     slug: 'backlight',
     title: 'Backlight',
-    count: BACKLIGHT_BOARDS.length,
-    desc: 'Illuminated glow signboards, storefront lightboxes & acrylic displays.',
     items: BACKLIGHT_BOARDS,
   },
   {
     slug: 'led-signboards',
     title: '3D & LED',
-    count: LED_SIGNBOARDS.length,
-    desc: '3D acrylic channel letters, titanium chrome finishes & illuminated LED boards.',
     items: LED_SIGNBOARDS,
   },
   {
     slug: 'roll-up',
     title: 'Roll Up',
-    count: ROLLUP_BANNERS.length,
-    desc: 'Retractable roll-up banners, event standees & showroom display stands.',
     items: ROLLUP_BANNERS,
+  },
+  {
+    slug: 'sunpack',
+    title: 'Sunpack',
+    items: SUNPACK_BOARDS,
   },
 ];

@@ -27,7 +27,7 @@ export default function WorkCategoryPage() {
             <span>Back to Home</span>
           </Link>
 
-          {/* Compact Category Switcher */}
+          {/* Compact Category Switcher (Count Removed) */}
           <div className="flex flex-wrap gap-1.5">
             {WORK_CATEGORIES.map((cat) => (
               <Link
@@ -39,16 +39,16 @@ export default function WorkCategoryPage() {
                     : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                 }`}
               >
-                {cat.title} ({cat.count})
+                {cat.title}
               </Link>
             ))}
           </div>
         </div>
 
-        {/* Header */}
+        {/* Header (Count Removed) */}
         <div className="border-b border-slate-200 pb-3 mb-5">
           <h1 className="text-xl sm:text-2xl font-bold text-slate-900">
-            {currentCategory.title} ({currentCategory.count})
+            {currentCategory.title}
           </h1>
           <p className="text-xs text-slate-500 mt-0.5">
             Signboard &amp; advertising works by AK Creation
@@ -65,14 +65,14 @@ export default function WorkCategoryPage() {
               <div className="aspect-[4/3] bg-slate-100 overflow-hidden">
                 <img
                   src={item.src}
-                  alt={item.alt}
+                  alt={item.alt || item.title}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
               </div>
               <div className="p-2.5 bg-slate-50 border-t border-slate-100">
-                <p className="text-xs font-semibold text-slate-800 truncate" title={item.alt}>
-                  {item.alt}
+                <p className="text-xs font-semibold text-slate-800 truncate" title={item.title}>
+                  {item.title}
                 </p>
               </div>
             </div>
