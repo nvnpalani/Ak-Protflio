@@ -86,6 +86,9 @@ export const ACRYLIC_BOARDS = [
 
 // Foam Sheet with Vinyl (Wall Pasting & Promotional Display Boards)
 export const FOAM_SHEET_WORKS = [
+  { id: 'fs-vip-1', category: 'Foam Sheet with Vinyl', title: 'VIP Housing Golden Key Full Wall Vinyl & Foam Sheet Mural', src: '/signs/foam-sheet-vip-1.jpg' },
+  { id: 'fs-vip-2', category: 'Foam Sheet with Vinyl', title: 'VIP Housing Modern Living Office Backdrop Foam Sheet Display', src: '/signs/foam-sheet-vip-2.jpg' },
+  { id: 'fs-vip-3', category: 'Foam Sheet with Vinyl', title: 'VIP Housing Find Perfect Address Location Pin Wall Branding', src: '/signs/foam-sheet-vip-3.jpg' },
   { id: 'fs-1', category: 'Foam Sheet with Vinyl', title: 'NR IAS Academy & Rotary Club Trichy Foam Sheet Wall Branding', src: '/signs/foam-sheet-1.jpg' },
   { id: 'fs-2', category: 'Foam Sheet with Vinyl', title: 'Alagu Dental Care Foam Sheet with Vinyl Board Display', src: '/signs/foam-sheet-2.jpg' },
 ];
