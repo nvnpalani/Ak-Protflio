@@ -119,16 +119,6 @@ export default function Services() {
                 All ({FLEX_ADVERTISING.length + BACKLIGHT_BOARDS.length + LED_SIGNBOARDS.length})
               </button>
             </div>
-
-            <a
-              href={waLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-compact-wa text-xs py-1.5 px-3.5 no-underline self-start"
-            >
-              <MessageCircle size={14} />
-              <span>Get Quote</span>
-            </a>
           </div>
         </div>
 
