@@ -37,6 +37,15 @@ const FLEX_ADVERTISING = [
   { id: 'fl-5', src: '/signs/flex-5.jpg', alt: 'Rotary Mega Star Night Street Hoarding Night' },
 ];
 
+// Roll Up Banners (Standees / Display Stands)
+const ROLLUP_BANNERS = [
+  { id: 'ru-1', src: '/signs/rollup-1.jpg', alt: 'MetaBot AI & VR Awareness Roll Up Standee' },
+  { id: 'ru-2', src: '/signs/rollup-2.jpg', alt: 'GetAssist & LandMarket Activator Program Roll Up Banner' },
+  { id: 'ru-3', src: '/signs/rollup-3.jpg', alt: 'The Boys Burger Franchise Opportunity Standee' },
+  { id: 'ru-4', src: '/signs/rollup-4.jpg', alt: 'RP Traders Authorized Dealer Roll Up Display Stand' },
+  { id: 'ru-5', src: '/signs/rollup-5.jpg', alt: 'The Boys Burger Franchise Opportunity Graphic Standee' },
+];
+
 export default function Services() {
   const [activeTab, setActiveTab] = useState('flex');
   const [activeImg, setActiveImg] = useState(null);
@@ -45,6 +54,7 @@ export default function Services() {
     if (activeTab === 'flex') return 'Flex Advertising & Hoardings';
     if (activeTab === 'backlight') return 'Backlight & Glow Signboards';
     if (activeTab === 'led') return '3D & LED Signboards';
+    if (activeTab === 'rollup') return 'Roll Up Banners & Standees';
     return 'Signboard & Branding Works';
   };
 
@@ -59,7 +69,9 @@ export default function Services() {
       ? BACKLIGHT_BOARDS
       : activeTab === 'led'
       ? LED_SIGNBOARDS
-      : [...FLEX_ADVERTISING, ...BACKLIGHT_BOARDS, ...LED_SIGNBOARDS];
+      : activeTab === 'rollup'
+      ? ROLLUP_BANNERS
+      : [...FLEX_ADVERTISING, ...BACKLIGHT_BOARDS, ...LED_SIGNBOARDS, ...ROLLUP_BANNERS];
 
   return (
     <section id="services" className="py-10 bg-white border-b border-slate-200" aria-label="Signboard Services">
@@ -71,7 +83,7 @@ export default function Services() {
             <div className="section-badge-compact">Our Works</div>
             <h2 className="section-title-compact">Signboard &amp; Advertising Works</h2>
             <p className="section-subtitle-compact text-xs sm:text-sm text-slate-500 mt-1">
-              Explore our completed signage, glow boards, and outdoor advertising works.
+              Explore our completed signage, glow boards, roll up standees, and outdoor advertising works.
             </p>
           </div>
 
@@ -109,6 +121,16 @@ export default function Services() {
                 3D &amp; LED ({LED_SIGNBOARDS.length})
               </button>
               <button
+                onClick={() => setActiveTab('rollup')}
+                className={`flex-shrink-0 px-3 py-1.5 rounded-lg text-xs font-bold border-none cursor-pointer transition-colors ${
+                  activeTab === 'rollup'
+                    ? 'bg-yellow-400 text-slate-950'
+                    : 'bg-slate-100 text-slate-600 hover:text-slate-950 hover:bg-slate-200'
+                }`}
+              >
+                Roll Up ({ROLLUP_BANNERS.length})
+              </button>
+              <button
                 onClick={() => setActiveTab('all')}
                 className={`flex-shrink-0 px-3 py-1.5 rounded-lg text-xs font-bold border-none cursor-pointer transition-colors ${
                   activeTab === 'all'
@@ -116,7 +138,7 @@ export default function Services() {
                     : 'bg-slate-100 text-slate-600 hover:text-slate-950 hover:bg-slate-200'
                 }`}
               >
-                All ({FLEX_ADVERTISING.length + BACKLIGHT_BOARDS.length + LED_SIGNBOARDS.length})
+                All ({FLEX_ADVERTISING.length + BACKLIGHT_BOARDS.length + LED_SIGNBOARDS.length + ROLLUP_BANNERS.length})
               </button>
             </div>
           </div>
