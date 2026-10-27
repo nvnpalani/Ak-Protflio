@@ -58,7 +58,7 @@ export default function Footer() {
             <img
               src="/ak-logo.png"
               alt="AK Creation Logo"
-              className="h-7 w-7 rounded object-contain"
+              className="h-8 w-8 rounded-full object-contain bg-white p-0.5 border border-slate-700"
             />
             <span className="font-bold text-white">{SITE_CONFIG.studioName}</span>
             <span className="text-slate-500">•</span>

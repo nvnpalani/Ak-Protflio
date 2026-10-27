@@ -67,7 +67,7 @@ export default function Navbar() {
               <img
                 src="/ak-logo.png"
                 alt="AK Creation Logo"
-                className="flex-shrink-0 h-12 w-12 rounded-lg object-contain"
+                className="flex-shrink-0 h-11 w-11 sm:h-12 sm:w-12 rounded-full object-contain bg-white shadow-2xs border border-slate-200/80 p-0.5"
               />
               <div className="flex flex-col min-w-0">
                 <span className="font-display font-extrabold text-sm sm:text-base text-slate-900 tracking-tight leading-none truncate">
