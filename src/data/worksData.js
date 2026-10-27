@@ -72,6 +72,7 @@ export const DIRECTION_BOARDS = [
 
 // Roadshow (Promotional Mobile Vehicle / Auto & Van Transit Campaigns)
 export const ROADSHOW_WORKS = [
+  { id: 'rs-propshell-truck', category: 'Roadshow', title: 'Propshell Panjappur Mobile Promotion Campaign Truck', src: '/signs/roadshow-propshell-truck.jpg' },
   { id: 'rs-propshell-auto', category: 'Roadshow', title: 'Propshell Panjappur Auto Backside & Side Transit Branding', src: '/signs/roadshow-auto-propshell.jpg' },
   { id: 'rs-1', category: 'Roadshow', title: 'Paradise Biryani Mobile Roadshow Promotion Van', src: '/signs/roadshow-1.jpg' },
 ];

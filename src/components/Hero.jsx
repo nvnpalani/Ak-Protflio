@@ -5,6 +5,13 @@ import { WORK_CATEGORIES } from '../data/worksData';
 
 const PROMOTIONAL_WORKS = [
   {
+    id: 'hero-roadshow-truck',
+    title: 'Mobile Roadshow Campaign Truck',
+    category: 'Roadshow Ads',
+    src: '/signs/roadshow-propshell-truck.jpg',
+    description: 'Propshell Panjappur 3-sided mobile roadshow promotional campaign vehicle wrap.',
+  },
+  {
     id: 'hero-barricade',
     title: 'Traffic Barricade Ads',
     category: 'Barricade Ads',
