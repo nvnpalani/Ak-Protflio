@@ -84,6 +84,12 @@ export const FOAM_SHEET_WORKS = [
   { id: 'fs-2', category: 'Foam Sheet with Vinyl', title: 'Alagu Dental Care Foam Sheet with Vinyl Board Display', src: '/signs/foam-sheet-2.jpg' },
 ];
 
+// One Way Vision Stickers (Perforated Window & Glass Partition Graphics)
+export const ONE_WAY_VISION = [
+  { id: 'owv-1', category: 'One way Vision Sticker', title: 'VIP Housing Best Investment on Earth One Way Vision Sticker', src: '/signs/vision-1.jpg' },
+  { id: 'owv-2', category: 'One way Vision Sticker', title: 'VIP Housing Our Culture Tree Window Glass Vision Film', src: '/signs/vision-2.jpg' },
+];
+
 export const WORK_CATEGORIES = [
   {
     slug: 'flex-ads',
@@ -109,6 +115,11 @@ export const WORK_CATEGORIES = [
     slug: 'foam-sheet-vinyl',
     title: 'Foam Sheet with Vinyl',
     items: FOAM_SHEET_WORKS,
+  },
+  {
+    slug: 'one-way-vision',
+    title: 'One way Vision Sticker',
+    items: ONE_WAY_VISION,
   },
   {
     slug: 'roll-up',
