@@ -13,7 +13,7 @@ export default function Services() {
           <h2 className="section-title-compact">Signboard &amp; Advertising Works</h2>
         </div>
 
-        {/* Compact Text Only Categories (Count Removed) */}
+        {/* Compact Text Only Categories (No Count) */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3">
           {WORK_CATEGORIES.map((cat) => (
             <Link

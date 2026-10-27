@@ -42,13 +42,13 @@ export const ROLLUP_BANNERS = [
   { id: 'ru-5', category: 'Roll Up', title: 'The Boys Burger Franchise Opportunity Graphic Standee', src: '/signs/rollup-5.jpg' },
 ];
 
-// Sunpack Sheets (Pole Boards & Flute Sheet Advertising)
+// Sunpack Sheets (Pole Advertising / Real Estate / Promotional Boards)
 export const SUNPACK_BOARDS = [
-  { id: 'sp-1', category: 'Sunpack', title: 'Badminton Academy Coaching Camp Pole Sunpack', src: '/signs/sunpack-1.jpg' },
-  { id: 'sp-2', category: 'Sunpack', title: 'Prasanna Properties Perumal Avenue Pole Sunpack', src: '/signs/sunpack-2.jpg' },
-  { id: 'sp-3', category: 'Sunpack', title: 'Prasanna Properties Venkateshwara Nagar Pole Sunpack', src: '/signs/sunpack-3.jpg' },
-  { id: 'sp-4', category: 'Sunpack', title: 'Velchoice Properties Special Plot Offer Pole Sunpack', src: '/signs/sunpack-4.jpg' },
-  { id: 'sp-5', category: 'Sunpack', title: 'Velchoice Properties Panjappur Pole Sunpack Board', src: '/signs/sunpack-5.jpg' },
+  { id: 'sp-1', category: 'Sunpack', title: 'Badminton Academy Summer Camp Pole Board', src: '/signs/sunpack-1.jpg' },
+  { id: 'sp-2', category: 'Sunpack', title: 'Sri Prasanna Properties Perumal Avenue Pole Board', src: '/signs/sunpack-2.jpg' },
+  { id: 'sp-3', category: 'Sunpack', title: 'Sri Prasanna Properties Venkateshwara Nagar Pole Board', src: '/signs/sunpack-3.jpg' },
+  { id: 'sp-4', category: 'Sunpack', title: 'Velchoice Properties Plot Promotion Pole Board', src: '/signs/sunpack-4.jpg' },
+  { id: 'sp-5', category: 'Sunpack', title: 'Velchoice Properties Real Estate Sunpack Board', src: '/signs/sunpack-5.jpg' },
 ];
 
 export const WORK_CATEGORIES = [

@@ -27,7 +27,7 @@ export default function WorkCategoryPage() {
             <span>Back to Home</span>
           </Link>
 
-          {/* Compact Category Switcher (Count Removed) */}
+          {/* Compact Category Switcher (No Count) */}
           <div className="flex flex-wrap gap-1.5">
             {WORK_CATEGORIES.map((cat) => (
               <Link
@@ -45,7 +45,7 @@ export default function WorkCategoryPage() {
           </div>
         </div>
 
-        {/* Header (Count Removed) */}
+        {/* Header (No Count) */}
         <div className="border-b border-slate-200 pb-3 mb-5">
           <h1 className="text-xl sm:text-2xl font-bold text-slate-900">
             {currentCategory.title}
@@ -71,8 +71,8 @@ export default function WorkCategoryPage() {
                 />
               </div>
               <div className="p-2.5 bg-slate-50 border-t border-slate-100">
-                <p className="text-xs font-semibold text-slate-800 truncate" title={item.title}>
-                  {item.title}
+                <p className="text-xs font-semibold text-slate-800 truncate" title={item.alt || item.title}>
+                  {item.alt || item.title}
                 </p>
               </div>
             </div>
