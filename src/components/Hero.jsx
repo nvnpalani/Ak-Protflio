@@ -1,6 +1,5 @@
-import { Check, Sparkles, FileDown, MessageCircle } from 'lucide-react';
+import { Check, Sparkles, MessageCircle } from 'lucide-react';
 import { SITE_CONFIG } from '../data/config';
-import { generatePresentationPdf } from '../utils/generatePresentationPdf';
 
 export default function Hero() {
 
@@ -50,18 +49,8 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Action Buttons: Download PDF Presentation & WhatsApp */}
+            {/* Action Buttons: WhatsApp */}
             <div className="flex flex-wrap items-center gap-3">
-              <button
-                type="button"
-                onClick={generatePresentationPdf}
-                className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-lg border border-slate-900 cursor-pointer transition-colors shadow-xs"
-                title="Download Company Presentation PDF"
-              >
-                <FileDown size={16} className="text-yellow-400" />
-                <span>Download Presentation (PDF)</span>
-              </button>
-
               <a
                 href={`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(SITE_CONFIG.whatsappMessage)}`}
                 target="_blank"

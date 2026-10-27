@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Menu, X, FileDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { SITE_CONFIG } from '../data/config';
-import { generatePresentationPdf } from '../utils/generatePresentationPdf';
 
 const NAV_LINKS = [
   { href: 'home',      label: 'Home' },
@@ -81,34 +80,22 @@ export default function Navbar() {
               </div>
             </button>
 
-            {/* Desktop Navigation & PDF Download */}
-            <div className="hidden md:flex items-center gap-2">
-              <nav className="flex items-center gap-1" aria-label="Main navigation">
-                {NAV_LINKS.map(({ href, label }) => (
-                  <button
-                    key={href}
-                    onClick={() => go(href)}
-                    className={`px-3 py-1.5 rounded-md text-xs font-bold border-none cursor-pointer transition-colors ${
-                      active === href
-                        ? 'text-slate-950 bg-yellow-300'
-                        : 'text-slate-600 bg-transparent hover:text-slate-950 hover:bg-slate-100'
-                    }`}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </nav>
-
-              <button
-                type="button"
-                onClick={generatePresentationPdf}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold bg-slate-900 hover:bg-slate-800 text-white border-none cursor-pointer transition-colors shadow-xs ml-1"
-                title="Download Company Presentation PDF"
-              >
-                <FileDown size={14} className="text-yellow-400" />
-                <span>PDF Profile</span>
-              </button>
-            </div>
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
+              {NAV_LINKS.map(({ href, label }) => (
+                <button
+                  key={href}
+                  onClick={() => go(href)}
+                  className={`px-3 py-1.5 rounded-md text-xs font-bold border-none cursor-pointer transition-colors ${
+                    active === href
+                      ? 'text-slate-950 bg-yellow-300'
+                      : 'text-slate-600 bg-transparent hover:text-slate-950 hover:bg-slate-100'
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </nav>
 
             {/* Mobile menu toggle */}
             <div className="flex md:hidden items-center">
@@ -141,18 +128,6 @@ export default function Navbar() {
                 {label}
               </button>
             ))}
-
-            <button
-              type="button"
-              onClick={() => {
-                setMenuOpen(false);
-                generatePresentationPdf();
-              }}
-              className="w-full flex items-center justify-center gap-2 px-3 py-2 mt-2 rounded-md text-sm font-bold bg-slate-900 text-white border-none cursor-pointer shadow-xs"
-            >
-              <FileDown size={16} className="text-yellow-400" />
-              <span>Download Presentation (PDF)</span>
-            </button>
           </div>
         </div>
       )}
