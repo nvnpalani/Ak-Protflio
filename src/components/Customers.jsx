@@ -60,7 +60,7 @@ export default function Customers() {
   const marqueeLogos = [...CUSTOMER_LOGOS, ...CUSTOMER_LOGOS];
 
   return (
-    <section id="customers" className="py-7 sm:py-9 bg-[#fffefc] border-b border-slate-200 overflow-hidden" aria-label="Our Customer Companies">
+    <section id="customers" className="py-9 sm:py-12 bg-[#fffefc] border-b border-slate-200 overflow-hidden" aria-label="Our Customer Companies">
       <div className="container">
         
         {/* Compact Section Header */}
@@ -87,16 +87,16 @@ export default function Customers() {
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-10 sm:w-20 bg-gradient-to-l from-[#fffefc] to-transparent z-10" />
 
         {/* Running Track in Single Row with Compact Padding */}
-        <div className="marquee-track flex items-center gap-3.5 sm:gap-4 px-3">
+        <div className="marquee-track flex items-center gap-4 sm:gap-5 px-3">
           {marqueeLogos.map((client, index) => (
             <div
               key={index}
-              className="bg-white border-1.5 border-slate-200 hover:border-slate-800 rounded-xl p-3 sm:p-4 flex items-center justify-center h-20 sm:h-24 md:h-26 w-44 sm:w-52 md:w-56 flex-shrink-0 shadow-xs transition-all duration-150 group"
+              className="bg-white border-2 border-slate-200 hover:border-slate-800 rounded-2xl p-4 sm:p-5 flex items-center justify-center h-24 sm:h-28 md:h-32 w-52 sm:w-64 md:w-72 flex-shrink-0 shadow-xs transition-all duration-150 group"
             >
               <img
                 src={client.logo}
                 alt={client.name}
-                className="max-h-12 sm:max-h-15 md:max-h-16 w-auto max-w-[85%] object-contain transition-transform duration-150 group-hover:scale-105"
+                className="max-h-16 sm:max-h-20 md:max-h-24 w-auto max-w-[90%] object-contain transition-transform duration-150 group-hover:scale-105"
               />
             </div>
           ))}
