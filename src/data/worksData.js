@@ -49,6 +49,7 @@ export const SUNPACK_BOARDS = [
   { id: 'sp-3', category: 'Sunpack', title: 'Sri Prasanna Properties Venkateshwara Nagar Pole Board', src: '/signs/sunpack-3.jpg' },
   { id: 'sp-4', category: 'Sunpack', title: 'Velchoice Properties Plot Promotion Pole Board', src: '/signs/sunpack-4.jpg' },
   { id: 'sp-5', category: 'Sunpack', title: 'Velchoice Properties Real Estate Sunpack Board', src: '/signs/sunpack-5.jpg' },
+  { id: 'sp-6', category: 'Sunpack', title: 'Propshell Venkateshwara Nagar Villa Plots Pole Board', src: '/signs/sunpack-6.jpg' },
 ];
 
 export const WORK_CATEGORIES = [
