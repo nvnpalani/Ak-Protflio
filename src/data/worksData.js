@@ -16,6 +16,7 @@ export const LED_SIGNBOARDS = [
 
 // Backlight Boards (Glow Signs / Lightboxes)
 export const BACKLIGHT_BOARDS = [
+  { id: 'bl-vip', category: 'Backlight', title: 'VIP Housing & Properties Entrance Backlight Glow Sign Board', src: '/signs/backlight-vip-housing.jpg' },
   { id: 'bl-9', category: 'Backlight', title: 'LED Backlight Board Matrix Fabrication & Testing', src: '/signs/backlight-9.jpg' },
   { id: 'bl-1', category: 'Backlight', title: 'Chiya Bakery & Snacks Red Backlight Board', src: '/signs/backlight-1.jpg' },
   { id: 'bl-2', category: 'Backlight', title: 'Sri Krishna Bakery Wide Backlight Board', src: '/signs/backlight-2.jpg' },
