@@ -26,11 +26,11 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: 'TechVision LED Signboard',
+    title: 'Royal Steel 3D Backlit Letters',
     category: 'led',
     categoryLabel: 'LED & 3D Letter Boards',
-    description: 'Custom LED channel letters with acrylic face and aluminium housing for a technology company.',
-    image: 'https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=800&q=80',
+    description: 'Warm backlit 3D stainless steel profile lettering on wood finish facade with precision craftsmanship.',
+    image: '/signs/led-royal-steel.png',
     featured: true,
   },
   {
@@ -62,12 +62,12 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    title: 'The Grand Hotel 3D Letters',
+    title: 'APN Residency 3D LED Signboard',
     category: 'led',
     categoryLabel: 'LED & 3D Letter Boards',
-    description: 'Stainless-steel backlit 3D letter installation for a luxury hotel entrance facade.',
-    image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80',
-    featured: false,
+    description: 'Golden warm illuminated 3D profile letters and logo unit installed on hotel storefront facade.',
+    image: '/signs/led-apn-residency.jpg',
+    featured: true,
   },
   {
     id: 7,

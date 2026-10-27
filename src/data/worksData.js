@@ -1,5 +1,7 @@
 // 3D & LED Signboards
 export const LED_SIGNBOARDS = [
+  { id: 'led-royal', category: '3D & LED', title: 'Royal Steel Warm Backlit 3D Letters', src: '/signs/led-royal-steel.png' },
+  { id: 'led-apn', category: '3D & LED', title: 'APN Residency Warm Glow 3D LED Board', src: '/signs/led-apn-residency.jpg' },
   { id: 'led-1', category: '3D & LED', title: 'Commercial LED Shop Signboard', src: '/signs/sign-1.jpg' },
   { id: 'led-2', category: '3D & LED', title: '3D Acrylic Letters Workshop', src: '/signs/sign-2.jpg' },
   { id: 'led-3', category: '3D & LED', title: 'Illuminated LED Signboard Night', src: '/signs/sign-3.jpg' },
