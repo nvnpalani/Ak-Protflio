@@ -68,6 +68,13 @@ const PROMOTIONAL_WORKS = [
     description: 'VIP Housing promotional walking team with illuminated LED billboard backpacks.',
   },
   {
+    id: 'hero-look-walker-2',
+    title: 'Illuminated Walking LED Billboards',
+    category: 'Look Walker Ads',
+    src: '/signs/look-walker-vertigo.jpg',
+    description: 'Street-level high-visibility LED backlit walking mobile promotion boards.',
+  },
+  {
     id: 'hero-poster',
     title: 'Wall Poster Pasting Campaign',
     category: 'Wall Poster & Flyer',

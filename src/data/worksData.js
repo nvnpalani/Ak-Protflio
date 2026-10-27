@@ -129,6 +129,7 @@ export const BUS_ADS = [
 // Look Walker Backpack Displays
 export const LOOK_WALKER_ADS = [
   { id: 'lw-1', category: 'Look Walker Ads', title: 'VIP Housing Promotional Walking Team with LED Backpack Billboards', src: '/signs/look-walker-vip.jpg' },
+  { id: 'lw-2', category: 'Look Walker Ads', title: 'Street-Level Illuminated Walking LED Mobile Billboards', src: '/signs/look-walker-vertigo.jpg' },
 ];
 
 // Wall Poster Displays
