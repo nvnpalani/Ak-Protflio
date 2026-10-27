@@ -1,5 +1,6 @@
-import { Check, Sparkles } from 'lucide-react';
+import { Check, Sparkles, FileDown, MessageCircle } from 'lucide-react';
 import { SITE_CONFIG } from '../data/config';
+import { generatePresentationPdf } from '../utils/generatePresentationPdf';
 
 export default function Hero() {
 
@@ -13,7 +14,7 @@ export default function Hero() {
             
             <div className="section-badge-compact">
               <Sparkles size={12} className="text-amber-800" />
-              Creative Design & Signboard Maker
+              Creative Design &amp; Signboard Maker
             </div>
 
             <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.12] text-slate-900 tracking-tight mb-3">
@@ -24,7 +25,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-5 max-w-lg">
-              We specialize in custom <strong className="text-slate-900">Graphic Design, Brand Logos</strong>, and durable commercial <strong className="text-slate-900">LED & 3D ACP Signboards</strong> manufactured in our own workshop.
+              We specialize in custom <strong className="text-slate-900">Graphic Design, Brand Logos</strong>, and durable commercial <strong className="text-slate-900">LED &amp; 3D ACP Signboards</strong> manufactured in our own workshop.
             </p>
 
             {/* Compact feature list */}
@@ -45,8 +46,31 @@ export default function Hero() {
                 <span className="w-4 h-4 rounded-full bg-yellow-400 flex items-center justify-center text-slate-950">
                   <Check size={11} className="stroke-[3]" />
                 </span>
-                Logo & Social Media Kits
+                Logo &amp; Social Media Kits
               </span>
+            </div>
+
+            {/* Action Buttons: Download PDF Presentation & WhatsApp */}
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onClick={generatePresentationPdf}
+                className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-lg border border-slate-900 cursor-pointer transition-colors shadow-xs"
+                title="Download Company Presentation PDF"
+              >
+                <FileDown size={16} className="text-yellow-400" />
+                <span>Download Presentation (PDF)</span>
+              </button>
+
+              <a
+                href={`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(SITE_CONFIG.whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-bold text-xs sm:text-sm px-4 py-2.5 rounded-lg border border-slate-900 transition-colors no-underline shadow-xs"
+              >
+                <MessageCircle size={16} />
+                <span>Enquire on WhatsApp</span>
+              </a>
             </div>
 
           </div>
