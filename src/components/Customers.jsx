@@ -14,6 +14,10 @@ const CUSTOMER_LOGOS = [
     logo: '/ruloans.png',
   },
   {
+    name: 'Rupeelife',
+    logo: '/rupeelife.png',
+  },
+  {
     name: 'B-Fit',
     logo: '/b-fit.png',
   },
