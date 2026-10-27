@@ -69,6 +69,15 @@ export const ROADSHOW_WORKS = [
   { id: 'rs-1', category: 'Roadshow', title: 'Paradise Biryani Mobile Roadshow Promotion Van', src: '/signs/roadshow-1.jpg' },
 ];
 
+// Acrylic Boards (VIP Housing & Custom Signage with Studs)
+export const ACRYLIC_BOARDS = [
+  { id: 'ab-1', category: 'Acrylic Board', title: 'VIP Housing Villa Plot Acrylic Board with Studs', src: '/signs/acrylic-1.jpg' },
+  { id: 'ab-2', category: 'Acrylic Board', title: 'VIP Housing Every Direction Vertical Acrylic Wall Board', src: '/signs/acrylic-2.jpg' },
+  { id: 'ab-3', category: 'Acrylic Board', title: 'VIP Housing Dream Home Premium Blue Acrylic Board', src: '/signs/acrylic-3.jpg' },
+  { id: 'ab-4', category: 'Acrylic Board', title: 'VIP Housing Best Investment Earth Acrylic Board', src: '/signs/acrylic-4.jpg' },
+  { id: 'ab-5', category: 'Acrylic Board', title: 'Gold Mirror Acrylic Billing Counter Name Plate', src: '/signs/acrylic-5.jpg' },
+];
+
 export const WORK_CATEGORIES = [
   {
     slug: 'flex-ads',
@@ -84,6 +93,11 @@ export const WORK_CATEGORIES = [
     slug: 'led-signboards',
     title: '3D & LED',
     items: LED_SIGNBOARDS,
+  },
+  {
+    slug: 'acrylic-board',
+    title: 'Acrylic Board',
+    items: ACRYLIC_BOARDS,
   },
   {
     slug: 'roll-up',

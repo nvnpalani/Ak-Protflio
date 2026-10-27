@@ -14,15 +14,15 @@ export default function Services() {
         </div>
 
         {/* Compact Text Only Categories (No Count) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2.5 sm:gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5 sm:gap-3">
           {WORK_CATEGORIES.map((cat) => (
             <Link
               key={cat.slug}
               to={`/works/${cat.slug}`}
-              className="flex items-center justify-between p-3 bg-slate-50 hover:bg-yellow-400 text-slate-900 border border-slate-200 hover:border-slate-900 rounded-lg font-bold text-xs sm:text-sm transition-colors no-underline group"
+              className="flex items-center justify-between p-2.5 sm:p-3 bg-slate-50 hover:bg-yellow-400 text-slate-900 border border-slate-200 hover:border-slate-900 rounded-lg font-bold text-xs sm:text-sm transition-colors no-underline group"
             >
-              <span>{cat.title}</span>
-              <ArrowRight size={14} className="text-slate-400 group-hover:text-slate-950 transition-colors" />
+              <span className="truncate pr-1">{cat.title}</span>
+              <ArrowRight size={14} className="text-slate-400 group-hover:text-slate-950 transition-colors shrink-0" />
             </Link>
           ))}
         </div>
