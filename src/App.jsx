@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import './index.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Services from './components/Services';
 import Customers from './components/Customers';
 import Footer from './components/Footer';
 import WorkCategoryPage from './pages/WorkCategoryPage';
@@ -11,7 +10,6 @@ function HomePage() {
   return (
     <main>
       <Hero />
-      <Services />
       <Customers />
     </main>
   );

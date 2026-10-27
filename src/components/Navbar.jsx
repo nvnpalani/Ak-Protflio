@@ -5,7 +5,6 @@ import { SITE_CONFIG } from '../data/config';
 
 const NAV_LINKS = [
   { href: 'home',      label: 'Home' },
-  { href: 'services',  label: 'Services' },
   { href: 'customers', label: 'Clients' },
 ];
 
@@ -23,7 +22,7 @@ export default function Navbar() {
     }
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
-      const ids = ['home', 'services', 'customers'];
+      const ids = ['home', 'customers'];
       for (let i = ids.length - 1; i >= 0; i--) {
         const el = document.getElementById(ids[i]);
         if (el && window.scrollY >= el.offsetTop - 100) {

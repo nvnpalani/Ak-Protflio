@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           {/* Left Column: Equal Column Space */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center lg:pr-6">
             <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.14] text-slate-900 tracking-tight mb-3">
               AK CREATION{' '}
               <br />
@@ -53,8 +53,8 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Equal Column Space */}
-          <div className="flex justify-center items-center">
+          {/* Right Column: Founder with Left Dividing Line */}
+          <div className="flex justify-center items-center lg:border-l lg:border-slate-200 lg:pl-10">
             <div className="relative max-w-[260px] sm:max-w-xs lg:max-w-sm w-full mx-auto">
 
               {/* Card with Photo */}
