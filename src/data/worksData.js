@@ -69,8 +69,9 @@ export const DIRECTION_BOARDS = [
   { id: 'dir-4', category: 'Direction Board', title: 'TVK Prakash Nagar Straight Arrow Direction Board Night', src: '/signs/direction-4.jpg' },
 ];
 
-// Roadshow (Promotional Mobile Vehicle / Van Advertising Campaigns)
+// Roadshow (Promotional Mobile Vehicle / Auto & Van Transit Campaigns)
 export const ROADSHOW_WORKS = [
+  { id: 'rs-propshell-auto', category: 'Roadshow', title: 'Propshell Panjappur Auto Backside & Side Transit Branding', src: '/signs/roadshow-auto-propshell.jpg' },
   { id: 'rs-1', category: 'Roadshow', title: 'Paradise Biryani Mobile Roadshow Promotion Van', src: '/signs/roadshow-1.jpg' },
 ];
 
