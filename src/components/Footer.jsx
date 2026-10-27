@@ -40,7 +40,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300 py-6 border-t-2 border-yellow-400" role="contentinfo">
       <div className="container">
-        <div className="flex flex-col items-center gap-4 text-xs sm:flex-row sm:justify-between">
+        <div className="flex flex-col items-center gap-4 text-xs sm:flex-row sm:justify-between mb-3">
           
           {/* Logo & copyright */}
           <div className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
@@ -82,6 +82,12 @@ export default function Footer() {
             <ArrowUp size={12} />
           </button>
 
+        </div>
+
+        {/* Studio & Workshop Address */}
+        <div className="pt-3 border-t border-slate-800 flex items-center justify-center sm:justify-start gap-1.5 text-[11px] text-slate-400 text-center sm:text-left">
+          <MapPin size={13} className="text-yellow-400 flex-shrink-0" />
+          <span>Workshop &amp; Studio: <strong className="text-slate-300 font-medium">{SITE_CONFIG.address}</strong></span>
         </div>
       </div>
     </footer>

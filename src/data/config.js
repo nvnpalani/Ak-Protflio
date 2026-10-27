@@ -12,7 +12,7 @@ export const SITE_CONFIG = {
   phone:         '+91 63695 62986',
   whatsappNumber: '916369562986',      // Country code + number, no + or spaces
   email:         'hello@akcreation.in',
-  address:       'Tamil Nadu, India',
+  address:       '1/642, Vasan Nagar, Fatima Nagar, Nanchikurichi, Tamil Nadu 620102',
 
   // Social – replace # with real URLs
   instagram:     'https://instagram.com/akcreation',
