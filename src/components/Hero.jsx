@@ -60,7 +60,7 @@ export default function Hero() {
                 <div className="rounded-lg overflow-hidden border border-slate-900 bg-white aspect-[4/5]">
                   <img
                     src="/founder.jpg"
-                    alt="The Secret to Great Design - PixelCraft Studio"
+                    alt="The Secret to Great Design - AK Creation"
                     className="w-full h-full object-cover"
                   />
                 </div>

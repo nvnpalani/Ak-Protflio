@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { X, ZoomIn, MessageCircle } from 'lucide-react';
 import { SITE_CONFIG } from '../data/config';
 
@@ -42,14 +42,14 @@ export default function Services() {
   const [activeImg, setActiveImg] = useState(null);
 
   const getCategoryName = () => {
-    if (activeTab === 'flex') return 'Flex Advertising';
-    if (activeTab === 'backlight') return 'Backlight Board';
-    if (activeTab === 'led') return '3D & LED Signboard';
-    return 'Custom Signboard';
+    if (activeTab === 'flex') return 'Flex Advertising & Hoardings';
+    if (activeTab === 'backlight') return 'Backlight & Glow Signboards';
+    if (activeTab === 'led') return '3D & LED Signboards';
+    return 'Signboard & Branding Works';
   };
 
   const waLink = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(
-    `Hi PixelCraft Studio! I want to get a quote for: ${getCategoryName()}.`
+    `Hello AK Creation! I would like to request a quotation and proposal for: ${getCategoryName()}.`
   )}`;
 
   const currentImages =
@@ -70,6 +70,9 @@ export default function Services() {
           <div>
             <div className="section-badge-compact">Our Works</div>
             <h2 className="section-title-compact">Signboard &amp; Advertising Works</h2>
+            <p className="section-subtitle-compact text-xs sm:text-sm text-slate-500 mt-1">
+              Explore our completed signage, glow boards, and outdoor advertising works.
+            </p>
           </div>
 
           {/* Filter Tabs + Quote */}
