@@ -57,33 +57,14 @@ export default function Hero() {
           <div className="flex justify-center items-center">
             <div className="relative max-w-[260px] sm:max-w-xs lg:max-w-sm w-full mx-auto">
 
-              {/* Card with Dark Border & Yellow Shadow */}
-              <div className="bg-white p-3 rounded-xl">
+              {/* Card with Photo */}
+              <div className="bg-white p-2 sm:p-2.5 rounded-xl shadow-xs border border-slate-200/80">
                 <div className="rounded-lg overflow-hidden aspect-square bg-slate-100">
                   <img
                     src="/founder.jpg"
-                    alt="Aijith Kumar - Founder & Creative Director"
+                    alt="AK Creation Founder"
                     className="w-full h-full object-cover"
                   />
-                </div>
-
-                {/* Founder Profile Details */}
-                <div className="pt-2.5 text-center">
-                  <h3 className="font-display font-extrabold text-base text-slate-900 leading-tight">
-                    Aijith Kumar
-                  </h3>
-                  <div className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full my-1">
-                    Founder &amp; Creative Director
-                  </div>
-                  <p className="text-[10px] sm:text-[11px] text-slate-500 font-medium">
-                    Signage &amp; Fabrication Specialist
-                  </p>
-
-                  <div className="bg-yellow-100/80 border border-yellow-300 rounded px-2 py-1 mt-2">
-                    <p className="text-[10px] sm:text-[11px] font-black text-slate-900 tracking-tight">
-                      &quot;It's not inspiration, It's consistency!&quot;
-                    </p>
-                  </div>
                 </div>
               </div>
 
