@@ -53,6 +53,7 @@ export const ROLLUP_BANNERS = [
 
 // Sunpack Sheets (Pole Advertising / Real Estate / Promotional Boards)
 export const SUNPACK_BOARDS = [
+  { id: 'sp-7', category: 'Sunpack', title: 'Propshell Panjappur Median Highway Light Pole Sunpack Board', src: '/signs/sunpack-7.jpg' },
   { id: 'sp-1', category: 'Sunpack', title: 'Badminton Academy Summer Camp Pole Board', src: '/signs/sunpack-1.jpg' },
   { id: 'sp-2', category: 'Sunpack', title: 'Sri Prasanna Properties Perumal Avenue Pole Board', src: '/signs/sunpack-2.jpg' },
   { id: 'sp-3', category: 'Sunpack', title: 'Sri Prasanna Properties Venkateshwara Nagar Pole Board', src: '/signs/sunpack-3.jpg' },
