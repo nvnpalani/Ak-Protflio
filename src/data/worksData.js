@@ -126,6 +126,16 @@ export const BUS_ADS = [
   { id: 'bus-1', category: 'Bus Backside Ads', title: 'Sri Vannamayil Chits Public Transit Bus Backside Branding', src: '/signs/bus-sri-vannamayil.jpg' },
 ];
 
+// Look Walker Backpack Displays
+export const LOOK_WALKER_ADS = [
+  { id: 'lw-1', category: 'Look Walker Ads', title: 'VIP Housing Promotional Walking Team with LED Backpack Billboards', src: '/signs/look-walker-vip.jpg' },
+];
+
+// Wall Poster Displays
+export const POSTER_ADS = [
+  { id: 'pos-1', category: 'Wall Poster & Flyer', title: 'Propshell Panjappur Street Wall Poster Pasting Campaign', src: '/signs/poster-propshell.jpg' },
+];
+
 export const WORK_CATEGORIES = [
   {
     slug: 'flex-ads',

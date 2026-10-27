@@ -60,6 +60,20 @@ const PROMOTIONAL_WORKS = [
     src: '/signs/umbrella-ads.jpg',
     description: 'Dansberg branded outdoor umbrella with sturdy steel tripod stand.',
   },
+  {
+    id: 'hero-look-walker',
+    title: 'Look Walker Backpack Displays',
+    category: 'Look Walker Ads',
+    src: '/signs/look-walker-vip.jpg',
+    description: 'VIP Housing promotional walking team with illuminated LED billboard backpacks.',
+  },
+  {
+    id: 'hero-poster',
+    title: 'Wall Poster Pasting Campaign',
+    category: 'Wall Poster & Flyer',
+    src: '/signs/poster-propshell.jpg',
+    description: 'Propshell Panjappur Venkateshwara Nagar high-density street wall poster campaign.',
+  },
 ];
 
 export default function Hero() {
