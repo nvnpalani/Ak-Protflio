@@ -29,6 +29,7 @@ export const BACKLIGHT_BOARDS = [
 
 // Flex Advertising (Banners & Hoardings)
 export const FLEX_ADVERTISING = [
+  { id: 'fl-propshell-bb', category: 'Flex Ads', title: 'Propshell Panjappur Venkateshwara Nagar Highway Billboard', src: '/signs/propshell-billboard.jpg' },
   { id: 'fl-1', category: 'Flex Ads', title: 'Chendur Enclave Roadside Flex Banner', src: '/signs/flex-1.jpg' },
   { id: 'fl-2', category: 'Flex Ads', title: 'Propshell Panjappur Pole Flex Board', src: '/signs/flex-2.jpg' },
   // { id: 'fl-3', category: 'Flex Ads', title: 'Rotary Mega Star Night Wide Outdoor Hoarding', src: '/signs/flex-3.jpg' },
@@ -91,6 +92,21 @@ export const FOAM_SHEET_WORKS = [
 export const ONE_WAY_VISION = [
   { id: 'owv-1', category: 'One way Vision Sticker', title: 'VIP Housing Best Investment on Earth One Way Vision Sticker', src: '/signs/vision-1.jpg' },
   { id: 'owv-2', category: 'One way Vision Sticker', title: 'VIP Housing Our Culture Tree Window Glass Vision Film', src: '/signs/vision-2.jpg' },
+];
+
+// Canopy & Tent Displays
+export const CANOPY_ADS = [
+  { id: 'can-1', category: 'Canopy Ads', title: 'MY3 Overseas Education Promotional Canopy Tent & Standees', src: '/signs/canopy-tent.jpg' },
+];
+
+// Flag Displays
+export const FLAG_ADS = [
+  { id: 'flg-1', category: 'Flag Ads', title: 'Teardrop & Feather Flag Advertising Banners', src: '/signs/flag-ads.jpg' },
+];
+
+// Umbrella Displays
+export const UMBRELLA_ADS = [
+  { id: 'umb-1', category: 'Umbrella Ads', title: 'Dansberg Strong Outdoor Promotional Umbrella', src: '/signs/umbrella-ads.jpg' },
 ];
 
 export const WORK_CATEGORIES = [

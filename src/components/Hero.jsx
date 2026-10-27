@@ -1,8 +1,42 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronUp, ZoomIn, X } from 'lucide-react';
 import { WORK_CATEGORIES } from '../data/worksData';
 
+const PROMOTIONAL_WORKS = [
+  {
+    id: 'hero-canopy',
+    title: 'Canopy Tent & Standees',
+    category: 'Canopy Ads',
+    src: '/signs/canopy-tent.jpg',
+    description: 'MY3 Overseas Education promotional canopy booth with matching roll-up standees.',
+  },
+  {
+    id: 'hero-flags',
+    title: 'Feather Flag Banners',
+    category: 'Flag Ads',
+    src: '/signs/flag-ads.jpg',
+    description: 'Teardrop and feather flag banner advertising stands for outdoor events.',
+  },
+  {
+    id: 'hero-billboard',
+    title: 'Highway Unipole Billboard',
+    category: 'Hoarding & Flex',
+    src: '/signs/propshell-billboard.jpg',
+    description: 'Propshell Panjappur Venkateshwara Nagar high-visibility illuminated highway hoarding.',
+  },
+  {
+    id: 'hero-umbrella',
+    title: 'Promotional Branding Umbrella',
+    category: 'Umbrella Ads',
+    src: '/signs/umbrella-ads.jpg',
+    description: 'Dansberg branded outdoor umbrella with sturdy steel tripod stand.',
+  },
+];
+
 export default function Hero() {
+  const [showMore, setShowMore] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <section
@@ -37,7 +71,8 @@ export default function Hero() {
                   Explore work categories:
                 </span>
               </div>
-              <div className="flex flex-wrap gap-2">
+              
+              <div className="flex flex-wrap items-center gap-2">
                 {WORK_CATEGORIES.map((cat) => (
                   <Link
                     key={cat.slug}
@@ -48,7 +83,72 @@ export default function Hero() {
                     <ArrowRight size={12} className="text-slate-400 group-hover:text-slate-950 transition-colors shrink-0" />
                   </Link>
                 ))}
+
+                {/* Read More button directly next to Roadshow */}
+                <button
+                  type="button"
+                  onClick={() => setShowMore(!showMore)}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-xs transition-all cursor-pointer shadow-2xs ${
+                    showMore
+                      ? 'bg-yellow-400 text-slate-950 border border-slate-900 ring-2 ring-yellow-400/30'
+                      : 'bg-yellow-100 hover:bg-yellow-200 text-amber-900 border border-yellow-300'
+                  }`}
+                  aria-expanded={showMore}
+                >
+                  <span>{showMore ? 'Show Less' : 'Read More'}</span>
+                  {showMore ? (
+                    <ChevronUp size={13} className="shrink-0" />
+                  ) : (
+                    <ChevronDown size={13} className="shrink-0" />
+                  )}
+                </button>
               </div>
+
+              {/* Default hidden: displayed when Read More is clicked */}
+              {showMore && (
+                <div className="mt-3.5 p-3 sm:p-3.5 bg-white rounded-xl border border-slate-200/90 shadow-xs anim-slide-down">
+                  <div className="flex items-center justify-between mb-2.5">
+                    <span className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                      Promotional &amp; Outdoor Displays
+                    </span>
+                    <span className="text-[10px] text-slate-400 font-medium">Click to enlarge</span>
+                  </div>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                    {PROMOTIONAL_WORKS.map((item) => (
+                      <div
+                        key={item.id}
+                        onClick={() => setSelectedImage(item)}
+                        className="group relative rounded-lg overflow-hidden border border-slate-200 bg-slate-50 hover:border-slate-900 transition-all cursor-pointer shadow-2xs hover:shadow-xs"
+                      >
+                        <div className="aspect-[4/3] overflow-hidden bg-slate-100 relative">
+                          <img
+                            src={item.src}
+                            alt={item.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span className="bg-white/95 text-slate-900 p-1 rounded-full shadow-xs">
+                              <ZoomIn size={13} />
+                            </span>
+                          </div>
+                        </div>
+                        <div className="p-1.5 bg-white">
+                          <p className="text-[11px] font-bold text-slate-900 truncate leading-snug">
+                            {item.title}
+                          </p>
+                          <p className="text-[10px] text-yellow-600 font-semibold truncate">
+                            {item.category}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
             </div>
 
           </div>
@@ -73,6 +173,46 @@ export default function Hero() {
 
         </div>
       </div>
+
+      {/* Lightbox Modal for Preview */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-xs"
+          onClick={() => setSelectedImage(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="relative max-w-lg w-full bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200 anim-slide-down"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center transition-colors cursor-pointer"
+              aria-label="Close"
+            >
+              <X size={16} />
+            </button>
+
+            <div className="bg-slate-950 max-h-[65vh] flex items-center justify-center overflow-hidden">
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.title}
+                className="max-h-[65vh] w-auto max-w-full object-contain"
+              />
+            </div>
+
+            <div className="p-4 bg-white">
+              <span className="inline-block px-2 py-0.5 bg-yellow-100 border border-yellow-300 text-amber-900 font-bold text-[10px] rounded mb-1">
+                {selectedImage.category}
+              </span>
+              <h3 className="font-bold text-base text-slate-900">{selectedImage.title}</h3>
+              <p className="text-xs text-slate-600 mt-1">{selectedImage.description}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
