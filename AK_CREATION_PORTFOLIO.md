@@ -21,9 +21,12 @@
 ---
 
 ## 👨‍💼 Leadership & Founder
-![AK Creation Co-Founder](/founder.jpg)
+![Aijith Kumar - Founder & Creative Director](/founder.jpg)
 
-*"It's not inspiration, It's consistency!"*  
+### **Aijith Kumar**
+*Founder, Creative Director & Fabrication Specialist*
+
+> *"It's not inspiration, It's consistency!"*  
 AK Creation eliminates the gap between creative vector graphic design and heavy-duty structural physical signage fabrication.
 
 ---
