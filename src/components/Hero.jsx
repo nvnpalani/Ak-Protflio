@@ -57,17 +57,17 @@ export default function Hero() {
               
               {/* Clean Yellow Frame */}
               <div className="bg-yellow-400 p-2.5 rounded-xl border-2 border-slate-900 shadow-[4px_4px_0px_#0f172a]">
-                <div className="rounded-lg overflow-hidden border border-slate-900 bg-white aspect-[4/5]">
+                <div className="rounded-lg overflow-hidden border border-slate-900 bg-white aspect-square">
                   <img
                     src="/founder.jpg"
-                    alt="The Secret to Great Design - AK Creation"
+                    alt="AK Creation Co-Founder"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="pt-2 px-1 flex items-center justify-between text-xs text-slate-950 font-black">
                   <span>AK Creation</span>
                   <span className="bg-slate-950 text-yellow-300 px-2 py-0.5 rounded text-[10px]">
-                    Creative Lead
+                    Co-Founder
                   </span>
                 </div>
               </div>

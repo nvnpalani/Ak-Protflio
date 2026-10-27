@@ -66,15 +66,15 @@ export default function About() {
           {/* Right: Compact Photo Frame */}
           <div className="lg:col-span-5">
             <div className="max-w-xs mx-auto bg-white border-2 border-slate-900 rounded-xl p-2.5 shadow-[4px_4px_0px_#facc15]">
-              <div className="rounded-lg overflow-hidden aspect-[4/5] bg-slate-100">
+              <div className="rounded-lg overflow-hidden aspect-square bg-slate-100">
                 <img
                   src="/founder.jpg"
-                  alt="Creative Director - The Secret to Great Design"
+                  alt="AK Creation Co-Founder"
                   className="w-full h-full object-cover"
                 />
               </div>
               <p className="text-center text-xs font-black text-slate-900 mt-2">
-                &quot;Grow your design skills, one project at a time.&quot;
+                &quot;It's not inspiration, It's consistency!&quot;
               </p>
             </div>
           </div>
