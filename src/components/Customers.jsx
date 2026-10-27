@@ -2,16 +2,28 @@ import { Building2 } from 'lucide-react';
 
 const CUSTOMER_LOGOS = [
   {
+    name: 'SBI Life Insurance',
+    logo: '/sbi-life.png',
+  },
+  {
     name: 'City Union Bank',
     logo: '/city-union-bank.png',
   },
   {
-    name: 'NR IAS Academy',
-    logo: '/nr-ias-academy.png',
+    name: 'Ruloans',
+    logo: '/ruloans.png',
+  },
+  {
+    name: 'B-Fit',
+    logo: '/b-fit.png',
   },
   {
     name: 'VIP Housing and Properties',
     logo: '/vip-housing.png',
+  },
+  {
+    name: 'NR IAS Academy',
+    logo: '/nr-ias-academy.png',
   },
   {
     name: 'Propshell - Property Personalised',
