@@ -52,6 +52,14 @@ export const SUNPACK_BOARDS = [
   { id: 'sp-6', category: 'Sunpack', title: 'Propshell Venkateshwara Nagar Villa Plots Pole Board', src: '/signs/sunpack-6.jpg' },
 ];
 
+// Direction Boards (Roadside Wayfinding / Real Estate Direction Signs)
+export const DIRECTION_BOARDS = [
+  { id: 'dir-1', category: 'Direction Board', title: 'TVK Prakash Nagar U-Turn Direction Board Installation', src: '/signs/direction-1.jpg' },
+  { id: 'dir-2', category: 'Direction Board', title: 'Sri Prasanna Venkateswara Nagar Siruganur Direction Board', src: '/signs/direction-2.jpg' },
+  { id: 'dir-3', category: 'Direction Board', title: 'JBD Homes Muthamizh Garden Viralimalai Roadside Board', src: '/signs/direction-3.jpg' },
+  { id: 'dir-4', category: 'Direction Board', title: 'TVK Prakash Nagar Straight Arrow Direction Board Night', src: '/signs/direction-4.jpg' },
+];
+
 export const WORK_CATEGORIES = [
   {
     slug: 'flex-ads',
@@ -77,5 +85,10 @@ export const WORK_CATEGORIES = [
     slug: 'sunpack',
     title: 'Sunpack',
     items: SUNPACK_BOARDS,
+  },
+  {
+    slug: 'direction-board',
+    title: 'Direction Board',
+    items: DIRECTION_BOARDS,
   },
 ];
