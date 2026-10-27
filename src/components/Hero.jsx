@@ -5,6 +5,27 @@ import { WORK_CATEGORIES } from '../data/worksData';
 
 const PROMOTIONAL_WORKS = [
   {
+    id: 'hero-barricade',
+    title: 'Traffic Barricade Ads',
+    category: 'Barricade Ads',
+    src: '/signs/barricade-propshell.png',
+    description: 'Propshell Panjappur Venkateshwara Nagar high-visibility road barricade advertising board.',
+  },
+  {
+    id: 'hero-bus',
+    title: 'Bus Backside Branding',
+    category: 'Bus Backside Ads',
+    src: '/signs/bus-sri-vannamayil.jpg',
+    description: 'Sri Vannamayil Chits public transit bus backside promotional advertising.',
+  },
+  {
+    id: 'hero-auto',
+    title: 'Auto Backside & Side Ads',
+    category: 'Auto Backside Ads',
+    src: '/signs/roadshow-auto-propshell.jpg',
+    description: 'Propshell Panjappur dual-angle passenger auto rickshaw transit advertisement.',
+  },
+  {
     id: 'hero-canopy',
     title: 'Canopy Tent & Standees',
     category: 'Canopy Ads',
@@ -115,7 +136,7 @@ export default function Hero() {
                     <span className="text-[10px] text-slate-400 font-medium">Click to enlarge</span>
                   </div>
 
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-2.5">
                     {PROMOTIONAL_WORKS.map((item) => (
                       <div
                         key={item.id}

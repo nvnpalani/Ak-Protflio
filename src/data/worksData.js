@@ -111,6 +111,16 @@ export const UMBRELLA_ADS = [
   { id: 'umb-1', category: 'Umbrella Ads', title: 'Dansberg Strong Outdoor Promotional Umbrella', src: '/signs/umbrella-ads.jpg' },
 ];
 
+// Barricade Displays
+export const BARRICADE_ADS = [
+  { id: 'bar-1', category: 'Barricade Ads', title: 'Propshell Panjappur Road Safety Barricade Advertising Board', src: '/signs/barricade-propshell.png' },
+];
+
+// Bus Transit Displays
+export const BUS_ADS = [
+  { id: 'bus-1', category: 'Bus Backside Ads', title: 'Sri Vannamayil Chits Public Transit Bus Backside Branding', src: '/signs/bus-sri-vannamayil.jpg' },
+];
+
 export const WORK_CATEGORIES = [
   {
     slug: 'flex-ads',
