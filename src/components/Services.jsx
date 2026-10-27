@@ -9,8 +9,8 @@ export default function Services() {
         
         {/* Section Header */}
         <div className="mb-4">
-          <div className="section-badge-compact">Our Works</div>
-          <h2 className="section-title-compact">Signboard &amp; Advertising Works</h2>
+          <div className="section-badge-compact">Our Services</div>
+          <h2 className="section-title-compact"> Led Signboard &amp; Outdoor Advertising</h2>
         </div>
 
         {/* Compact Text Only Categories (No Count) */}

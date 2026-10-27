@@ -18,7 +18,7 @@ export default function About() {
 
           {/* Right: Compact Photo Frame */}
           <div className="lg:col-span-5">
-            <div className="max-w-xs mx-auto bg-white border-2 border-slate-900 rounded-xl p-3 shadow-[4px_4px_0px_#facc15]">
+            <div className="max-w-xs mx-auto bg-white ">
               <div className="rounded-lg overflow-hidden aspect-square bg-slate-100">
                 <img
                   src="/founder.jpg"
@@ -36,9 +36,9 @@ export default function About() {
                   Founder &amp; Creative Director
                 </div>
                 <p className="text-[10px] sm:text-[11px] text-slate-500 font-medium">
-                  Signage &amp; Fabrication Specialist
+                  Signage &amp; Our advertising 
                 </p>
-                
+
                 <div className="bg-yellow-100/80 border border-yellow-300 rounded px-2 py-1 mt-2">
                   <p className="text-[10px] sm:text-[11px] font-black text-slate-900 tracking-tight">
                     &quot;It's not inspiration, It's consistency!&quot;

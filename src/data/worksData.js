@@ -28,9 +28,13 @@ export const BACKLIGHT_BOARDS = [
 export const FLEX_ADVERTISING = [
   { id: 'fl-1', category: 'Flex Ads', title: 'Chendur Enclave Roadside Flex Banner', src: '/signs/flex-1.jpg' },
   { id: 'fl-2', category: 'Flex Ads', title: 'Propshell Panjappur Pole Flex Board', src: '/signs/flex-2.jpg' },
-  { id: 'fl-3', category: 'Flex Ads', title: 'Rotary Mega Star Night Wide Outdoor Hoarding', src: '/signs/flex-3.jpg' },
+  // { id: 'fl-3', category: 'Flex Ads', title: 'Rotary Mega Star Night Wide Outdoor Hoarding', src: '/signs/flex-3.jpg' },
   { id: 'fl-4', category: 'Flex Ads', title: 'B-Fit Sports Arena Flex Banner Stand', src: '/signs/flex-4.jpg' },
   { id: 'fl-5', category: 'Flex Ads', title: 'Rotary Mega Star Night Street Hoarding Night', src: '/signs/flex-5.jpg' },
+  { id: 'fl-6', category: 'Flex Ads', title: "Rotary Amico Success Fest Women's Day Culturals Flex Backdrop", src: '/signs/flex-6.jpg' },
+  { id: 'fl-7', category: 'Flex Ads', title: "Rotary Amico Success Fest Women's Day Culturals Flex Standee", src: '/signs/flex-7.jpg' },
+  { id: 'fl-8', category: 'Flex Ads', title: 'Bismi Furniture & Bed Mart Festival Offers Flex Board', src: '/signs/flex-8.jpg' },
+  { id: 'fl-9', category: 'Flex Ads', title: 'Thayanoor Vayalur Road Plot Promotion Roadside Hoarding', src: '/signs/flex-9.jpg' },
 ];
 
 // Roll Up Banners (Standees / Display Stands)

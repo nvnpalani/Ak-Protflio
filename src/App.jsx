@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Customers from './components/Customers';
-import About from './components/About';
 import Footer from './components/Footer';
 import WorkCategoryPage from './pages/WorkCategoryPage';
 
@@ -14,7 +13,6 @@ function HomePage() {
       <Hero />
       <Services />
       <Customers />
-      <About />
     </main>
   );
 }

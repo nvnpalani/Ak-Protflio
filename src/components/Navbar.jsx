@@ -7,7 +7,6 @@ const NAV_LINKS = [
   { href: 'home',      label: 'Home' },
   { href: 'services',  label: 'Services' },
   { href: 'customers', label: 'Clients' },
-  { href: 'about',     label: 'About' },
 ];
 
 export default function Navbar() {
@@ -24,7 +23,7 @@ export default function Navbar() {
     }
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
-      const ids = ['home', 'services', 'customers', 'about'];
+      const ids = ['home', 'services', 'customers'];
       for (let i = ids.length - 1; i >= 0; i--) {
         const el = document.getElementById(ids[i]);
         if (el && window.scrollY >= el.offsetTop - 100) {
@@ -68,7 +67,7 @@ export default function Navbar() {
               <img
                 src="/ak-logo.png"
                 alt="AK Creation Logo"
-                className="flex-shrink-0 h-9 w-9 rounded-lg object-contain"
+                className="flex-shrink-0 h-12 w-12 rounded-lg object-contain"
               />
               <div className="flex flex-col min-w-0">
                 <span className="font-display font-extrabold text-sm sm:text-base text-slate-900 tracking-tight leading-none truncate">
